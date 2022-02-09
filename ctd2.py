@@ -11,24 +11,28 @@ while condition == "start":
     while (stringg != "remove" and stringg != "enter"):
 
         stringg = input("Please type remove or enter: ")
-    if(length <= 5):
-        print("cannot remove bag is at minumum capacity")
-        flag = 1
-    if(flag == 0):
+    
+    if(stringg != "remove" or length > 5):
         number = input("Please enter a number: ")
+        flag = 1
+    
         while (not number.isdigit()):
             number = input("Please enter a number: ")
-    if stringg == "remove" and length > 5 and int(number) in bag and flag == 0:
+    if(length <= 5):
+        print("cannot remove bag is at minumum capacity")
+    
+    if stringg == "remove" and length > 5 and int(number) in bag :
         bag.remove(int(number))
-    elif stringg == "remove" and int(number) not in bag and flag == 0:
+    elif stringg == "remove" and int(number) not in bag and flag == 1:
         print(" the item is not in the list")
 
-    elif (stringg == "enter" and flag == 0):
+    elif (stringg == "enter"):
         bag.append(int(number))
     print(bag)
     condition = input("if you want to quit type stop if you want to continue type start: ")
     while (condition != "start" and condition != "stop"):
         condition = input("Please enter start or stop: ")
+
 
 
 
