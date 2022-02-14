@@ -18,7 +18,7 @@ while condition == "start":
     
         while (not number.isdigit()):
             number = input("Please enter a number: ")
-    if(length <= 5):
+    if(stringg == "remove" and length <= 5):
         print("cannot remove bag is at minumum capacity")
     
     if stringg == "remove" and length > 5 and int(number) in bag :
