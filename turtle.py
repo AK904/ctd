@@ -1,9 +1,6 @@
 import turtle
 ak = turtle.Turtle()
 def fun(x,size):
-    if size <= 10:
-        return
-    else:
         ak.speed(15)
         c = ["red","yellow","blue","green","orange","purple"]
         turtle.bgcolor("black")
@@ -16,9 +13,5 @@ def fun(x,size):
             else:
                 ak.right(i)
 
-fun(ak,200)
-
-
-
-
+fun(ak,176)
 turtle.done()
