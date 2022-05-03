@@ -21,17 +21,17 @@ while len(l1) != 0 or len(l2) != 0 or len(l3) != 0:
                 print("Enter it correctly")
 
         if(n2<=5):
-            if (n1 == 1 and len(l1) >= n2):
+            if (n1 == 1 and len(l1) >= n2 and n2 != 0):
                 for i in range(n2):
                     l1.pop()
                 check += 1
                 break
-            if (n1 == 2 and len(l2) >= n2):
+            if (n1 == 2 and len(l2) >= n2 and n2 != 0):
                 for i in range(n2):
                     l2.pop()
                 check += 1
                 break
-            if (n1 == 3 and len(l3) >= n2):
+            if (n1 == 3 and len(l3) >= n2 and n2 != 0):
                 for i in range(n2):
                     l3.pop()
                 check += 1
