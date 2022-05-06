@@ -1,4 +1,3 @@
-import numpy as np
 import cv2
 ph1 = cv2.imread('img.jpg')
 dis1 = cv2.imread('imgg.jpg')
